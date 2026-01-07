@@ -1,12 +1,26 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import SnakeGame from '@/components/SnakeGame';
 
 const Index = () => {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
+    <div className="min-h-screen flex flex-col items-center justify-center p-4 crt-effect">
+      <header className="mb-8 text-center">
+        <h1 className="text-4xl md:text-5xl arcade-text text-primary mb-2">
+          ARCADE SNAKE
+        </h1>
+        <p className="text-sm text-muted-foreground">
+          A CLASSIC REIMAGINED
+        </p>
+      </header>
+      
+      <main>
+        <SnakeGame />
+      </main>
+      
+      <footer className="mt-8 text-center">
+        <p className="text-xs text-muted-foreground">
+          © 2026 NEON ARCADE
+        </p>
+      </footer>
     </div>
   );
 };
